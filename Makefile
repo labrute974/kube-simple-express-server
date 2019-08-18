@@ -11,3 +11,9 @@ build:
 package:
 	@./scripts/build_image.sh
 	@./scripts/push_image.sh
+
+%-staging: env := staging
+%-production: env := production
+
+deploy-%:
+	@ENVIRONMENT=$(env) ./scripts/deploy.sh

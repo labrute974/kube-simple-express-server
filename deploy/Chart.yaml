@@ -1,0 +1,7 @@
+apiVersion: v1
+name: deploy
+version: 1.0.0
+description: Kubernetes simple express server
+maintainers:
+- name: Karel Malbroukou
+  email: karel.malbroukou@gmail.com
